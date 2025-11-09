@@ -1,0 +1,364 @@
+(html)
+
+<!--Blog section-->
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="section-title">
+            <h2>Blog</h2>
+        </div>
+    </div>
+        <div class="blog-container">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="Bon-Photos/Samsung-event.jpg" alt="Sepco Event">
+                </div>
+                <div class="blog-info">
+                    <h3>AMII Sepco Conference & Meeting</h3>
+                    <p>Sepco, along with other teams, organized a three-day conference and meeting in Davao, Philippines, featuring discussions on the application.</p>
+                    <a href="#" class="btn read-more-btn" data-modal="modal1">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="Bon-Photos/Bon-awards-01.jpg" alt="Tarkie Awards">
+                </div>
+                <div class="blog-info">
+                    <h3>Streamlining Business Processes</h3>
+                    <p>Arthaland Century Pacific Tower, Amazon Web Services Philippines, Inc., Delivered data-informed solutions that enhanced workflows and organizational performance.</p>
+                    <a href="#" class="btn read-more-btn" data-modal="modal2">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="Bon-Photos/Bon-awards.jpg" alt="Me Award">
+                </div>
+                <div class="blog-info">
+                    <h3>Applications Administration Excellence Award</h3>
+                    <p>Applications Administration Excellence Award for exceptional skill in managing and optimizing business applications to enhance efficiency and performance.</p>
+                    <a href="#" class="btn read-more-btn" data-modal="modal3">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!--<div class="blog-cta">
+            <a href="#" class="btn">View All Posts</a>
+        </div>-->
+    </section>
+
+    <!-- Modal 1 for Sepco Event -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-date">August 28, 2025</div>
+            <h2 class="modal-title">Sepco Conference & Meeting</h2>
+            <p class="modal-paragraph">
+               Sepco hosted a three-day conference in Davao, Philippines, bringing together key stakeholders, 
+               regional managers, and team leaders to discuss strategic initiatives, share best practices, 
+               and strengthen collaborations. The event included workshops, networking, and team-building activities 
+               aimed at improving operational efficiency and driving business growth in the region.
+            </p>
+            <div class="additional-info">
+                <h4 style="color: #2c3e50; margin-bottom: 15px;">Event Highlights:</h4>
+                <ul style="color: #555; line-height: 1.8; padding-left: 20px;">
+                    <li>Three-day conference held in Davao, Philippines.</li>
+                    <li>Engaged organizational leaders and decision-makers.</li>
+                    <li>Reviewed strategies, best practices, and the application.</li>
+                    <li>Workshops, networking, team-building, and app feature discussions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 for Process Optimization -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-date">October 24, 2025</div>
+            <h2 class="modal-title">Business Processes</h2>
+            <p class="modal-paragraph">
+               During the event, I collaborated with key stakeholders to discuss strategic initiatives, 
+               review the Application, and explore its new features and functionalities. 
+               The conference also included interactive workshops, networking sessions, and team-building activities, 
+               all aimed at optimizing business processes and driving operational efficiency.
+            </p>
+            <div class="additional-info">
+                <h4 style="color: #2c3e50; margin-bottom: 15px;">Key Achievements:</h4>
+                <ul style="color: #555; line-height: 1.8; padding-left: 20px;">
+                    <li>Delivered data-informed solutions that optimized workflows and enhanced organizational performance.</li>
+                    <li>Implemented data analytics dashboard for real-time monitoring.</li>
+                    <li>Collaborated with key stakeholders to discuss strategic initiatives and review the Application and its new features.</li>
+                    <li>Led workshops, networking sessions, and team-building activities focused on process improvement and operational efficiency.</li>
+                    <li>Contributed to measurable improvements in efficiency, reliability, and business outcomes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+(css)
+
+css
+
+
+/* Blog section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Blog Section */
+.blog {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-info {
+    padding: 25px;
+}
+
+.blog-date {
+    display: inline-block;
+    background-color: #3498db;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.blog-info h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.blog-info p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.blog-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.4s ease;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+}
+
+.modal-title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.modal-paragraph {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.modal-date {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+(script)
+
+// blog section
+    document.addEventListener('DOMContentLoaded', function() {
+    // Get all read more buttons
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    const modals = document.querySelectorAll('.modal');
+    const closeBtns = document.querySelectorAll('.close-btn');
+
+    // Open modal when Read More is clicked
+    readMoreBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const modalId = this.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+            
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        });
+    });
+
+    // Close modal when X is clicked
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        });
+    });
+
+    // Close modal when clicking outside content
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            modals.forEach(modal => {
+                modal.classList.remove('active');
+            });
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
