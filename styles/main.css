@@ -88,6 +88,11 @@ p {
             margin: 40px auto;
         }
 
+        .logo-link {
+           text-decoration: none;
+           display: inline-block;
+        }
+
 /* Header & Navigation */
 header {
     background-color: transparent;
@@ -175,7 +180,7 @@ nav {
     padding-right: 45%;
     position: relative;
     overflow: hidden;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /*font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;*/
 }
 
 .about-summary-content {
@@ -817,17 +822,46 @@ nav {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
 }
 
-.project-image i {
-    font-size: 100px;
-    color: #aaa;
-    z-index: 1;
-    position: relative;
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+/* Project text info - Updated to match blog section colors */
 .project-info {
     padding: 20px;
     background-color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    text-align: center; /* Center all text by default */
 }
+
+.project-info h3 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 600;
+    text-align: center; /* Ensure heading is centered */
+    margin-bottom: 15px; /* Add some space below heading */
+    color: #2c3e50; /* Same as blog-info h3 color */
+}
+
+.project-info p {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left; /* Paragraph is left-aligned */
+    margin-bottom: 20px; /* Add space below paragraph */
+    color: #7f8c8d; /* Same as blog-info p color */
+}
+
+/* Center the button as well */
+.project-info .btn {
+    display: inline-block; /* This helps with centering */
+    text-align: center;
+}
+
 /* Blog section */
 .blog {
             background-color: #f5f5f5;
