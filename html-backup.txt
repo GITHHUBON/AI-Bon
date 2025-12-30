@@ -98,12 +98,9 @@
         <div class="section-title">
             <h2>Core Skills</h2>
         </div>
-        
-        <!-- Option 1: Single Container with Two Rows -->
-        <div class="skills-slide-tracks">
-            <!-- First Row -->
+        <div class="skills-container">
             <div class="skills-slide-track">
-                <!-- First 6 items -->
+                <!-- Original 12 items -->
                 <div class="skill-item">
                     <div class="skill-icon">
                         <img src="Icons/html-5.png" alt="HTML5">
@@ -140,49 +137,6 @@
                     </div>
                     <h3>Power BI</h3>
                 </div>
-                
-                <!-- Duplicates for seamless loop -->
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="Icons/html-5.png" alt="HTML5">
-                    </div>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="Icons/css-3.png" alt="CSS3">
-                    </div>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="Icons/javascript.png" alt="JavaScript">
-                    </div>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="Icons/python.png" alt="Python">
-                    </div>
-                    <h3>Python</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="Icons/Excel-icon.png" alt="Excel">
-                    </div>
-                    <h3>Excel</h3>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon">
-                        <img src="Icons/Power-BI.png" alt="Power-BI">
-                    </div>
-                    <h3>Power BI</h3>
-                </div>
-            </div>
-            
-            <!-- Second Row -->
-            <div class="skills-slide-track">
-                <!-- Second 6 items -->
                 <div class="skill-item">
                     <div class="skill-icon">
                         <img src="Icons/sql-server.png" alt="SQL Server">
@@ -220,7 +174,43 @@
                     <h3>AppSheet</h3>
                 </div>
                 
-                <!-- Duplicates for seamless loop -->
+                <!-- Duplicate all 12 items for seamless loop -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="Icons/html-5.png" alt="HTML5">
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="Icons/css-3.png" alt="CSS3">
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="Icons/javascript.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="Icons/python.png" alt="Python">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="Icons/Excel-icon.png" alt="Excel">
+                    </div>
+                    <h3>Excel</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="Icons/Power-BI.png" alt="Power-BI">
+                    </div>
+                    <h3>Power BI</h3>
+                </div>
                 <div class="skill-item">
                     <div class="skill-icon">
                         <img src="Icons/sql-server.png" alt="SQL Server">
@@ -259,23 +249,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Option 2: Two Separate Columns (uncomment to use) -->
-        <!--
-        <div class="skills-columns">
-            <div class="skills-column">
-                <div class="skills-slide-track">
-                    First 6 items with duplicates...
-                </div>
-            </div>
-            <div class="skills-column">
-                <div class="skills-slide-track">
-                    Second 6 items with duplicates...
-                </div>
-            </div>
-        </div>
-        -->
-        
         <div class="skills-progress">
             <div class="progress-dot active"></div>
             <div class="progress-dot"></div>
